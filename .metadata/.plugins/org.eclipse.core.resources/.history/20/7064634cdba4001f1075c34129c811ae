@@ -1,0 +1,9 @@
+package com.controller;
+
+import comm.model.Membership;
+
+public interface MembershipControllerInf {
+	
+	public String addMembership(Membership membership);
+
+}

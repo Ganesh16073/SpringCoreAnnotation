@@ -1,0 +1,68 @@
+package com.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import comm.model.Membership;
+
+@Service
+public class MembershipService implements MembershipServiceInf{
+	List<Membership>  memberships=new ArrayList<>();
+
+	@Override
+	public String addMembership(Membership membership) {
+		try
+		{
+			boolean check= memberships.add(membership);
+			if(check)
+			{
+				return "New Membership added Sucessfull"+membership+"";
+			}
+			else
+			{
+				return "Member not added some problem is there";
+			}
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			return "Member not exception arrise";
+		}
+		
+		
+	}
+
+	@Override
+	public Optional<Membership> getMembershipById(int id) {
+		try
+		{
+			return memberships.stream().filter(memship -> memship.getId()==id).findFirst();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		
+	}
+
+	@Override
+	public List<Membership> getAllMemberships() {
+		
+		return new ArrayList<Membership>(memberships);
+	}
+
+	@Override
+	public String updateMembership(Membership membership) {
+		this.memberships.getmembershipbyId(membership);
+		return null;
+	}
+
+	@Override
+	public String deleteMembership(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

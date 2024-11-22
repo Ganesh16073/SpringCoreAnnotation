@@ -1,0 +1,11 @@
+package com.controller;
+
+import comm.model.Membership;
+
+public interface MembershipControllerInf {
+	
+	public String addMembership(Membership membership);
+	public Membership getMembershipById(int id);
+	public Membership getAllMember();
+
+}

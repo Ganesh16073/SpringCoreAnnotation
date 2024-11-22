@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="D:\Spring Core Anotation\StudentManagement-StartegyDesignPattern\src\main\java\com\config\AppConfig.java"/>
+			<item value="D:\Spring Core Anotation\CarEnfinApp"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="Com.GymManagmentSystem"/>
+			<item value="com.qualiferXmlProperties"/>
+			<item value="com.learnPropertie"/>
+			<item value="com.studentManagement"/>
+			<item value="com.StartegyDP"/>
+			<item value="com.flipkart"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="GymManagmentSystem"/>
+			<item value="QualiferWithProperties"/>
+			<item value="LearnPropertyFile"/>
+			<item value="StudentManagement-StartegyDesignPattern"/>
+			<item value="StartegyDP"/>
+			<item value="Flipkart"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="org.apache.maven.archetypes"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="maven-archetype-quickstart"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="1.5"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+			<item value="https://mvnrepository.com/artifact/org.apache.maven.archetypes/maven-archetype-quickstart"/>
+		</list>
+	</section>
+</section>

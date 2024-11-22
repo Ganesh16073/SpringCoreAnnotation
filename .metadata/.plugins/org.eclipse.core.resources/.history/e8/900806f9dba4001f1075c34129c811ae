@@ -1,0 +1,15 @@
+package com.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import comm.model.Membership;
+
+public interface MembershipServiceInf {
+
+	List<Membership> memberships = new ArrayList<>();
+	public String addMembership(Membership membership) {
+        memberships.add(membership);
+        return "Membership added successfully!";
+    }
+}

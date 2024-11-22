@@ -1,0 +1,63 @@
+package com.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.stereotype.Service;
+
+import com.exception.TrainerNotFoundException;
+
+import comm.model.Trainer;
+
+@Service
+public class TrainerService implements TrainerServiceInf {
+
+    private List<Trainer> tra = new ArrayList<>();
+
+    @Override
+    public void addTrainer(Trainer trainer) {
+        tra.add(trainer);
+        System.out.println("New Trainer Added => " + trainer);
+    }
+
+    @Override
+    public Optional<Trainer> findTrainerById(int id) {
+        return tra.stream()
+                .filter(trainer -> trainer.getTid() == id)
+                .findFirst();
+    }
+
+    @Override
+    public List<Trainer> getAllTrainer() {
+        return new ArrayList<>(tra);
+    }
+
+    @Override
+    public void updateTrainer(Trainer trainer) {
+        Optional<Trainer> optionalTrainer = findTrainerById(trainer.getTid());
+        if (optionalTrainer.isPresent()) {
+            Trainer existingTrainer = optionalTrainer.get();
+            existingTrainer.setAge(trainer.getAge());
+            existingTrainer.setAddress(trainer.getAddress());
+            existingTrainer.setExperienceYear(trainer.getExperienceYear());
+            existingTrainer.setGender(trainer.getGender());
+            existingTrainer.setMobileNo(trainer.getMobileNo());
+            existingTrainer.setName(trainer.getName());
+            existingTrainer.setSalary(trainer.getSalary());
+            System.out.println("Trainer Data Updated => " + existingTrainer);
+        } else {
+            throw new TrainerNotFoundException("Trainer with ID " + trainer.getTid() + " not found.");
+        }
+    }
+
+    @Override
+    public void deleteTrainerById(int id) {
+        boolean removed = tra.removeIf(trainer -> trainer.getTid() == id);
+        if (removed) {
+            System.out.println("Trainer Deleted id => " + id);
+        } else {
+            throw new TrainerNotFoundException("Trainer with ID " + id + " not found.");
+        }
+    }
+}

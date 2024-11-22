@@ -1,0 +1,41 @@
+package com.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import comm.model.Membership;
+
+public class MembershipService implements MembershipServiceInf{
+	List<Membership>  memberships=new ArrayList<>();
+
+	@Override
+	public String addMembership(Membership membership) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Membership getMembershipById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Membership> getAllMemberships() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String updateMembership(Membership membership) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteMembership(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

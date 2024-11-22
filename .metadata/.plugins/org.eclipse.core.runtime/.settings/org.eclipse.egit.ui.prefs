@@ -1,0 +1,5 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>&quot;Mini-Project Implemented using Spring core, qualifier Annotation for&\#x0A;practices of loose coupling&quot;</message>\r\n<message>debugged and removed some bugs and errors.</message>\r\n<message>Implemented Exception Handling in Admin.java upto Payment related method</message>\r\n<message>added membership functionality in admin class and implemented logic for&\#x0A;membershipController</message>\r\n<message>added Service Layer implementation of Membership</message>\r\n<message>implemented the Membership Servic</message>\r\n<message>added payment module at addMemeber. To take the payment while the&\#x0A;admission of member.</message>\r\n<message>Solved Dependency injection problem in Admin.java</message>\r\n</messages>
+eclipse.preferences.version=1
+repositories_view_filters=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<FilterCache/>
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300
